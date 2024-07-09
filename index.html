@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div id="form">
+        <h1>Registration form</h1>
+        <form action="#" method="post">
+            <div class="text">
+                <p>first Name:</p>
+                <input type="text" id="firstname" name="firstname" placeholder="first Name">
+            </div>
+
+            <div class="text">
+                <p>Last Name:</p>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+            </div>
+
+            <div class="text">
+                <P>Birthday:</P>
+                <input type="date" id="dateofbirth" name="Birthday" placeholder="Birthday">
+            </div>
+
+            <div class="gender">
+                <p>Gender: </p>
+                <div class="radios">
+                    <input type="radio" id="radio" name="male" placeholder="Gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="radio" name="female" placeholder="Gender">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <div class="text">
+                <p>Email:</p>
+                <input type="email" id="email" name="email" placeholder="email">
+            </div>
+            
+            <div class="text">
+                <p>Phone Number</p>
+                <input type="text" id="password" name="phonenumber" placeholder="Phone Number">
+            </div>
+            <button aria-rowcount="2" type="submit" onclick="getInputsValues(event)">Submit</button>
+        </form>
+    </div>
+    <link rel="stylesheet" href="./style.css">
+</body>
+
+</html>
